@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body  class="bg-gray-600 ">
+   
+  <div id="calculator" class="bg-gray-600 justify-center">
+   <input 
+    id="display" 
+    type="text" 
+    readonly 
+    class="w-1/2 flex justify-center mx-auto p-3 text-right text-xl border rounded bg-gray-100"
+  />
+    <div id="keys" class="grid grid-cols-4 gap-3 p-4 max-w-xs mx-auto">
+
+  <button onclick="appendToDisplay('+')" class="bg-orange-500 text-white text-xl p-4 rounded">+</button>
+
+  <button onclick="appendToDisplay('7')" class="bg-gray-200 text-xl p-4 rounded">7</button>
+  <button onclick="appendToDisplay('8')" class="bg-gray-200 text-xl p-4 rounded">8</button>
+  <button onclick="appendToDisplay('9')" class="bg-gray-200 text-xl p-4 rounded">9</button>
+
+  <button onclick="appendToDisplay('-')" class="bg-orange-500 text-white text-xl p-4 rounded">-</button>
+
+  <button onclick="appendToDisplay('4')" class="bg-gray-200 text-xl p-4 rounded">4</button>
+  <button onclick="appendToDisplay('5')" class="bg-gray-200 text-xl p-4 rounded">5</button>
+  <button onclick="appendToDisplay('6')" class="bg-gray-200 text-xl p-4 rounded">6</button>
+
+  <button onclick="appendToDisplay('*')" class="bg-orange-500 text-white text-xl p-4 rounded">*</button>
+
+  <button onclick="appendToDisplay('1')" class="bg-gray-200 text-xl p-4 rounded">1</button>
+  <button onclick="appendToDisplay('2')" class="bg-gray-200 text-xl p-4 rounded">2</button>
+  <button onclick="appendToDisplay('3')" class="bg-gray-200 text-xl p-4 rounded">3</button>
+
+  <button onclick="appendToDisplay('/')" class="bg-orange-500 text-white text-xl p-4 rounded">/</button>
+
+  <button onclick="appendToDisplay('0')" class="bg-gray-200 text-xl p-4 rounded col-span-2">0</button>
+  <button onclick="appendToDisplay('.')" class="bg-gray-200 text-xl p-4 rounded">.</button>
+
+  <button onclick="calculate()" class="bg-green-500 text-white text-xl p-4 rounded">=</button>
+  <button onclick="clearDisplay()" class="bg-red-500 text-white text-xl p-4 rounded col-span-4">C</button>
+
+</div>
+
+  </div>
+  <script src="keys.js"></script>
+<body>
+</html>
